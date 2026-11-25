@@ -37,8 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'myfirstapp',
+    'AccountApp' ,
+    'AppointmentApp' ,
 ]
+AUTH_USER_MODEL = 'AccountApp.User'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -50,7 +52,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'conifg.urls'
+ROOT_URLCONF = 'config.urls'
 
 TEMPLATES = [
     {
@@ -76,7 +78,7 @@ WSGI_APPLICATION = 'conifg.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3A5',
     }
 }
 
